@@ -14,7 +14,7 @@ body {
 .container {
   height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto; /* Đã thay 'hidden' thành 'auto' */
   position: relative;
   text-align: center;
   visibility: hidden;
@@ -47,7 +47,8 @@ body {
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  width: 600px;
+  width: 90%; /* Điều chỉnh để phù hợp với các kích thước màn hình nhỏ */
+  max-width: 600px; /* Đảm bảo không quá rộng trên màn hình lớn */
 }
 
 .text-box p {
@@ -62,7 +63,7 @@ body {
 .text-box .fake-btn {
   background-color: rgb(21, 161, 237);
   border-radius: 3px;
-  bottom: -50px;
+  bottom: -38px; /* Điều chỉnh vị trí của nút Send */
   color: #fff;
   padding: .5rem 1rem;
   position: absolute;
@@ -90,10 +91,9 @@ body {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -105,13 +105,11 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -252,16 +250,15 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 90%; /* Điều chỉnh kích thước container */
   }
 
   .four .text-box {
-    width: 90%;
+    width: 90%; /* Điều chỉnh lại phần text-box cho phù hợp với màn hình nhỏ */
   }
 
   .text-box .fake-btn {
-    bottom: -38px;
-    right: 5px;
+    bottom: -38px; /* Điều chỉnh lại vị trí của nút Send */
   }
 
   .idea-5 span {
@@ -273,8 +270,7 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
-    width: 50px;
+    width: 50px; /* Điều chỉnh kích thước mũ */
   }
 
   .wish-hbd {
