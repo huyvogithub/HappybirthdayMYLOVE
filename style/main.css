@@ -50,7 +50,7 @@ body {
   width: 600px;
 }
 .four .hbd-chatbox {
-  font-size: 0.8rem; /* Giảm kích thước chữ */
+  font-size: 0.75rem; /* Giảm kích thước chữ */
 }
 .text-box p {
   margin: 0;
