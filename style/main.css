@@ -67,7 +67,7 @@ body {
   bottom: -100px;
   color: #fff;
   padding: .4rem 1rem;
-  position: absolute;
+  position: relative;
   right: 5px;
 }
 
